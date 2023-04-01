@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    font-color:#0a0a0a;
+    background-color: #f4f4f4;
+  }
+  .pagination {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+  }
+  
+  
+  .pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  
+  .pagination a.active {
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+  }
+  
+  .pagination a:hover:not(.active) {
+    background-color: #ddd;
+    border-radius: 5px;
+  }
+  
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #ffff;
+    color: #ffffffce;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 20px;
+  }
+  
+  .sidebar li {
+    margin-bottom: 10px;
+  }
+  
+  .sidebar a {
+    color: #424242;
+    text-decoration: none;
+  }
+  .logo {
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  nav .logo img {
+    height: 40px;
+  }
+  .main {
+    margin-left: 200px;
+    padding: 20px;
+  }
+  
+  .main h1 {
+    margin-bottom: 20px;
+  }
+  nav {
+    background-color: #fff;
+    color: #333;
+    padding: 10px;
+    border-bottom: 1px solid #333;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav li {
+    margin-right: 20px;
+  }
+  
+  nav a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  nav a.active {
+    border-bottom: 2px solid #333;
+  }
+
+  nav {
+    background-color: #fff;
+    color: #333;
+    padding: 10px;
+    border-bottom: 1px solid #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  nav .logo img {
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav li {
+    margin-right: 20px;
+  }
+  
+  nav a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  nav a.active {
+    border-bottom: 2px solid #333;
+  }
+
+  @media screen and (max-width: 768px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    
+    .sidebar ul {
+      padding: 10px;
+    }
+    
+    .main {
+      margin: 0;
+    }
+  }
+  
