@@ -7,33 +7,22 @@
     <link rel="icon" type="image/png" href="assets/img/logo.png" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
-
-    <style>
-
-    </style>
   </head>
   <body>
     <div class="container-fluid">
       <div class="left">
-       
-            <img src="assets/img/arrow-left.png" style="position:absolute; width: 24px; height: 24px; margin-left: -340px!important; margin-bottom: 520px !important;" alt="Icon" href="">
-           
-           
+        <img src="assets/img/arrow-left.png" style="position:absolute; width: 24px; height: 24px; margin-left: -340px!important; margin-bottom: 520px !important;" alt="Icon" href="">
         <a class="welcome" style="margin-top: 25px !important; font-size:24px; margin-left:16px !important;">Setting Up your Restaurant </a>
         <a class="please" style="margin-left:30px; font-size:12px;">Please enter the details to start manage your restaurant</a>
         <br>
-        
         <form>         
-          <div class="form-group" style="margin-top: 15px !important;">
-                  
+          <div class="form-group" style="margin-top: 15px !important;">      
             <input class="input-field" id="document" type="name" placeholder="restaurant name " name="document" oninput="checkForm()">
           </div>
-          
           <div class="form-group" style="margin-top: 10px !important;">
             <textarea class="input-fieldloc" id="location" placeholder="Place your Restaurant address here" name="location" oninput="checkForm()" rows="4" cols="50"></textarea>
-
           </div>
-          </form>
+        </form>
           <a style="margin-top: 105px!important;  margin-right: 6px!important;">
             <div class="form-check" style="margin-top: 10px !important; font-size: 12px; font-family: 'Satoshi'; ">
               <input type="checkbox" class="form-check-input" id="termsCheckbox" style="margin-left: 20px!important;" oninput="checkForm()">
@@ -42,8 +31,7 @@
               </label>
             </div>
           </a>
-          <br>
-          
+          <br>        
           <div class="label-sizei">
             <button type="submit" id="register-btn" class="tombol-registered" disabled>
               <img src="assets/img/login.png" alt=""> <a class="">Register</a>
@@ -63,6 +51,7 @@
     </div>
   </body>
   <script>
+    /*script untuk merubah apabila semua form terisi makan button akan berubah warna*/
     function checkForm() {
       var documentInput = document.getElementById("document");
       var locationInput = document.getElementById("location");
@@ -77,7 +66,7 @@
         registerBtn.classList.remove("active");
       }
     }
-  
+    /*script untuk merubah icon password apabila icon di klik*/
     const imgPassword = document.getElementById('img-password');
     const passwordInput = document.getElementById('password');
     imgPassword.addEventListener('click', function() {
@@ -89,6 +78,5 @@
         imgPassword.src = 'assets/img/8.png';
       }
     });
-  </script>
-  
+  </script>  
 </html>

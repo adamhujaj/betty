@@ -5,15 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Register Succes</title>
     <link rel="icon" href="/assets/img/logo.png" type="image/png">
-
     <link rel="icon" type="image/png" src="/assets/img/logo.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
-    
-
-    <style>
-
-    </style>
   </head>
   <body>
     <div class="container-fluid">
@@ -22,16 +16,11 @@
                 <div class="bg-garis"><!--ini Untuk Ngasih garis--></div>
                 <a class="yourlogin">Your login process to the Betty Cashier application has been <br>successful. You will be redirected to the home page in ( 05 s )</a>
                 <br>
-        <lottie-player src="assets/TickSuccess.json" background="transparent"  speed="1"  style="width: 300px; height: 300px;" loop  autoplay></lottie-player>
-
-        
-        <form>        
+           <lottie-player src="assets/TickSuccess.json" background="transparent"  speed="1"  style="width: 300px; height: 300px;" loop  autoplay></lottie-player>      
+          <form>        
           </form>
-          
           <br>
-          
           <div class="label-sizei">
-           
           </div>
       </div>
       <div class="right">
@@ -45,6 +34,7 @@
     </div>
   </body>
   <script>
+     /*script untuk merubah apabila semua form terisi makan button akan berubah warna*/
     function checkForm() {
       var documentInput = document.getElementById("document");
       var locationInput = document.getElementById("location");
@@ -59,7 +49,7 @@
         registerBtn.classList.remove("active");
       }
     }
-  
+    /*script untuk merubah icon password apabila icon di klik*/
     const imgPassword = document.getElementById('img-password');
     const passwordInput = document.getElementById('password');
     imgPassword.addEventListener('click', function() {

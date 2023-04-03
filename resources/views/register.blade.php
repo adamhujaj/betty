@@ -7,10 +7,6 @@
     <link rel="icon" type="image/png" src="assets/img/arrow-right.png" >
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
-
-    <style>
-
-    </style>
   </head>
   <body>
     <div class="container-fluid">
@@ -18,37 +14,33 @@
         <a class="welcome" style="margin-top: 25px !important; margin-left: -20px!important;">Welcome to Betty Admins</a>
         <a class="please" style="margin-left:-47px!important">Please enter the details to start manage your restaurant</a>
         <br>
+        <!-- group button google -->
         <div class="label-sizei">
           <button type="submit" class="buttonGoogle" style="font-size: 16px!important;"><img src="assets/img/google.png" style="margin-right: 10px!important" alt=""><span></span><span class="googlefont">Sign Up whith Google</span> <img style="margin-left: 10px!important;" src="assets/img/arrow-right.png" alt=""></button>
-
-      </div>
+        </div>
+        <!-- garis or -->
         <div class="iborder-wrapper" style="margin-top: 10px !important;">
             <div class="iborder"></div>
             <div class="itext">or</div>
             <div class="iborder"></div>
-          </div>
+        </div>
+        <!-- start form -->
         <form>         
-          <div class="form-group" style="margin-top: 20px !important;">
-                  
+          <div class="form-group" style="margin-top: 20px !important;">   
             <input class="input-field" id="Username" type="name" placeholder="Adam hujaj " name="Username" oninput="checkForm()">
           </div>
-        
           <div class="form-group" style="margin-top: 10px !important;">
-          
             <input class="input-fieldtelp" id="telp" type="telp" placeholder="087773385468" name="telp" oninput="checkForm()">
           </div>
-          
           <div class="form-group" style="margin-top: 10px !important;">
             <input class="input-fieldsmail" id="email" type="email" placeholder="adamhujaj@gmail.com" name="email" oninput="checkForm()">
           </div>
-          
           <div class="form-group" style="margin-top: 10px !important;">
-
             <input class="input-fields" id="password" type="password" style="outline: none;"  autocomplete="new-password" placeholder="password" name="password" oninput="checkForm()">
             <img src="assets/img/8.png" id="img-password">
           </div>
-
-          </form>
+        </form>
+        <!-- end form -->
           <a style="margin-top: 40px !important; margin-right: 6px!important;">
             <div class="form-check" style="margin-top: 10px !important; font-size: 12px; font-family: 'Satoshi'; ">
               <input type="checkbox" class="form-check-input" id="termsCheckbox" style="margin-left: 20px!important;" oninput="checkForm()">
@@ -58,7 +50,7 @@
             </div>
           </a>
           <br>
-          
+          <!-- group button register -->
           <div class="label-sizei">
             <button type="submit" id="register-btn" class="tombol-registered" disabled>
               <img src="assets/img/login.png" alt=""> <a class="">Register</a>
@@ -67,17 +59,19 @@
             <a class="a-tengah">Already have an account? <span class="login-here" >Login here</span></a>
           </div>
       </div>
+      <!-- start conatiner right -->
       <div class="right">
         <h2 class="jumbotron-huruf">Betty has become a restaurant point of sale application <br> that is very easy to use, by anyone</h2>
         <div class="garis-biru"></div>            
         <p class="jumbotron-huruf1">Kaesang Pangarep, CEO of Sang Pisang</p>
-          <img class="aer" src="assets/img/back.png"  >
-          <img class="aor" src="assets/img/back1.png"  >
-          </div>
+          <img class="aer" src="assets/img/back.png">
+          <img class="aor" src="assets/img/back1.png">
       </div>
+      <!-- end right -->
     </div>
   </body>
   <script>
+    /*script untuk merubah apabila semua form terisi makan button akan berubah warna*/
     function checkForm() {
       var nameInput = document.getElementById("Username");
       var emailInput = document.getElementById("email");
@@ -94,7 +88,7 @@
         registerBtn.classList.remove("active");
       }
     }
-  
+    /*script untuk merubah icon password apabila icon di klik*/
     const imgPassword = document.getElementById('img-password');
     const passwordInput = document.getElementById('password');
     imgPassword.addEventListener('click', function() {
@@ -107,5 +101,4 @@
       }
     });
   </script>
-  
 </html>

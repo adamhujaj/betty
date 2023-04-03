@@ -7,29 +7,20 @@
     <link rel="icon" type="image/png" href="{{ asset('assets/img/logo.png') }}"/>
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <style>
-
-    </style>
   </head>
   <body>
     <div class="container-fluid">
+      <!-- div container left -->
       <div class="left">
         <a class="Login">Login Successful</a>
-                <div class="bg-garis"><!--ini Untuk Ngasih garis--></div>
-                <a class="yourlogin">Your login process to the Betty Cashier application has been <br>successful. You will be redirected to the home page in ( 05 s )</a>
-                <br>
-        <lottie-player src="{{ asset('assets/TickSuccess.json') }}" background="transparent"  speed="1"  style="width: 300px; height: 300px;" loop  autoplay></lottie-player>
-
-        
-        <form>        
-          </form>
-          
-          <br>
-          
-          <div class="label-sizei">
-           
-          </div>
+          <div class="bg-garis"><!--ini Untuk Ngasih garis--></div>
+            <a class="yourlogin">Your login process to the Betty Cashier application has been <br>successful. You will be redirected to the home page in ( 05 s )</a>
+              <br>
+                  <lottie-player src="{{ asset('assets/TickSuccess.json') }}" background="transparent"  speed="1"  style="width: 300px; height: 300px;" loop  autoplay></lottie-player>
+                      <form></form><br><div class="label-sizei"></div>
       </div>
+      <!--end div cintainer left -->
+      <!--div conatiner right-->
       <div class="right">
         <h2 class="jumbotron-huruf">Betty has become a restaurant point of sale application <br> that is very easy to use, by anyone</h2>
         <div class="garis-biru"></div>            
@@ -38,10 +29,11 @@
           <img class="aor" src="{{ asset('assets/img/back1.png') }}"  >
           </div>
       </div>
+      <!-- end div right -->
     </div>
   </body>
-
   <script>
+  /*script untuk merubah apabila semua form terisi makan button akan berubah warna*/
   function checkForm() {
     var documentInput = document.getElementById("document");
     var locationInput = document.getElementById("location");
@@ -56,7 +48,7 @@
       registerBtn.classList.remove("active");
     }
   }
-
+  /*script untuk merubah icon password apabila icon di klik*/
   const imgPassword = document.getElementById('img-password');
   const passwordInput = document.getElementById('password');
   imgPassword.addEventListener('click', function() {
